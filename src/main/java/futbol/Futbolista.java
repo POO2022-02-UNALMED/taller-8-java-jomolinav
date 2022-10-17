@@ -1,6 +1,6 @@
 package futbol;
 
-public abstract class Futbolista {
+public abstract class Futbolista implements Comparable<Futbolista>{
 	private static  String nombre;
 	private static  int edad;
 	private static String posicion;
@@ -18,7 +18,6 @@ public abstract class Futbolista {
 		return true ; 	
 	}
 	
-	static Futbolista f = new Futbolista("Alejo", 20, "Delantero") {};
 	public static void main(String args[]) {
 
 		System.out.println("El futbolista " + nombre + " tiene " + edad + ", y juega de "+ posicion);	

@@ -1,7 +1,7 @@
 package futbol;
 
 
-public class Jugador extends Futbolista{
+public class Jugador extends Futbolista {
 	
 	public short golesMarcados;
 	public byte dorsal;
@@ -18,6 +18,12 @@ public class Jugador extends Futbolista{
 	
 	public static void main(String args[]) {
 				System.out.println("El futbolista");	
-			}			
+			}
+
+	@Override
+	public int compareTo(Futbolista arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}			
 }
 

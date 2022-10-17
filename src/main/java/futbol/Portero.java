@@ -16,4 +16,9 @@ public class Portero extends Futbolista{
 
 		System.out.println("El futbolistaaa " );	
 	}
+    @Override
+    public int compareTo(Futbolista arg0) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 }
