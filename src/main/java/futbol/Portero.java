@@ -11,19 +11,25 @@ public class Portero extends Futbolista{
         this.dorsal = dorsal;
         posicion = "Portero";
     }
-    // Print
+
+    // Impresion
     public static void main(String args[]) {
 		System.out.println("El futbolistaaa " );	
 	}
-
+    // Getters
     public short getGolesRecibidos() {
         return golesRecibidos;
     }
-
-
+    public byte getDorsal(){
+        return this.dorsal;
+    }
+    // Comparacion
     @Override
     public int compareTo(Futbolista arg0) {
-        // TODO Auto-generated method stub
-        return this.getGolesRecibidos();
+        int valor = 0;
+
+        valor = (this.getGolesRecibidos() - golesRecibidos);
+    
+        return Math.abs(valor);
     }
 }
