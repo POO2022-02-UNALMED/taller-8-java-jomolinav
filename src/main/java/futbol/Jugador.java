@@ -22,8 +22,8 @@ public class Jugador extends Futbolista {
 
 	@Override
 	public int compareTo(Futbolista arg0) {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return this.getEdad() - arg0.getEdad();
 	}			
 }
 

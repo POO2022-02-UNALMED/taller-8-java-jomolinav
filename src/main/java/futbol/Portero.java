@@ -10,15 +10,20 @@ public class Portero extends Futbolista{
         this.golesRecibidos = golesRecibidos;
         this.dorsal = dorsal;
         posicion = "Portero";
-
     }
+    // Print
     public static void main(String args[]) {
-
 		System.out.println("El futbolistaaa " );	
 	}
+
+    public short getGolesRecibidos() {
+        return golesRecibidos;
+    }
+
+
     @Override
     public int compareTo(Futbolista arg0) {
         // TODO Auto-generated method stub
-        return 0;
+        return this.getGolesRecibidos();
     }
 }
